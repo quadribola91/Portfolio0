@@ -57,7 +57,7 @@ export default function Content({ blog }) {
 
   return (
     <>
-      <div className="bg-white-400 p-6 md:p-8 rounded-lg mb-6" id="Home">
+      <div className="bg-gray-200 p-6 md:p-8 rounded-lg mb-6" id="Home">
         <div className="relative block overflow-hidden rounded-lg border border-gray-100 p-4 lg:p-6 transition-transform hover:transform-hover">
           <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
 
@@ -65,13 +65,13 @@ export default function Content({ blog }) {
             <div className="mb-4 md:mb-0 text-center md:text-left">
               <p
                 ref={blogNameRef}
-                className="mt-1  font-medium  text-6xl text-gray-600 transition-colors hover:text-green-500"
+                className="mt-1  font-medium text-3xl md:text-6xl text-gray-600 transition-colors hover:text-green-500"
               >
                 {blog.name}
               </p>
               <h3
                 ref={blogTitleRef}
-                className="text-4xl font-bold text-gray-900  transition-colors hover:text-green-500"
+                className="text-3xl md:text-4xl font-bold text-gray-900  transition-colors hover:text-green-500"
               >
                 {blog.title}
               </h3>
@@ -87,13 +87,13 @@ export default function Content({ blog }) {
           </div>
 
           <div className="mt-4 mb-12">
-            <p className=" text-lg text-gray-400 font-bold font-mono hover:font-mono hover:text-gray-200">
+            <p className=" text-lg text-black-600 font-bold font-mono hover:font-serif hover:text-gray-800">
               {blog.content}
             </p>
           </div>
           <div
             ref={projectRef}
-            className="mt-15 text-5xl text-blue-500 font-mono"
+            className="mt-15 text-3xl md:text-5xl text-blue-500 font-mono"
           >
             <p>{blog.project}</p>
           </div>
