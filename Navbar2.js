@@ -34,10 +34,10 @@ function Navbar2() {
 
   return (
     <header
-      className={`bg-gray-30 shadow-lg ${isNavOpen ? "md:hidden" : ""}`}
+      className={`bg-green-300 shadow-lg ${isNavOpen ? "md:hidden" : ""}`}
       id="navbar"
     >
-      <div className="container mx-auto top-0 flex items-center justify-between p-1">
+      <div className="container mx-auto top-0 flex items-center  justify-between p-1">
         {/* Container for logo */}
         <div className="flex items-center">
           <img src={logo1} className="rounded-full h-12" alt="Logo" />
@@ -49,10 +49,10 @@ function Navbar2() {
             isNavOpen ? "block" : "hidden"
           }`}
         >
-          <div className="nav-center bg-white p-4 rounded-full shadow-lg">
+          <div className="nav-center bg-green-600 p-4 rounded-full shadow-lg">
             <Link
               to="/home"
-              className={`text-gray-800 font-bold m-2 ${
+              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/Home" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -60,7 +60,7 @@ function Navbar2() {
             </Link>
             <Link
               to="/AboutMe"
-              className={`text-gray-800 font-bold m-2 over:text-green-500 ${
+              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/AboutMe" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -68,7 +68,7 @@ function Navbar2() {
             </Link>
             <Link
               to="/contact"
-              className={`text-gray-800 font-bold m-2 ${
+              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/contact" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -86,7 +86,7 @@ function Navbar2() {
           <div className="nav-center bg-red-200 p-2 rounded-full shadow-lg">
             <Link
               to="/projects"
-              className={`text-gray-800 font-bold m-2 ${
+              className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 font-bold m-2 ${
                 location.pathname === "/projects" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -136,7 +136,7 @@ function Navbar2() {
         <div className="flex flex-col items-center space-y-4 mt-4 p-4">
           <Link
             to="/Home"
-            className={`text-gray-800 font-bold hover:text-green-500 transition ${
+            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/Home" ? "active" : ""
             }`}
           >
@@ -144,7 +144,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/AboutMe"
-            className={`text-gray-800 font-bold hover:text-green-500 transition ${
+            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/AboutMe" ? "active" : ""
             }`}
           >
@@ -152,7 +152,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/contact"
-            className={`text-gray-800 font-bold hover:text-green-500 transition ${
+            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/contact" ? "active" : ""
             }`}
           >
@@ -160,7 +160,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/projects"
-            className={`bg-red-400 text-white rounded-full px-2 py-2 font-medium ${
+            className={`bg-red-400 text-xl hover:text-green-800 text-white rounded-full px-2 py-2 font-medium ${
               location.pathname === "/projects" ? "active" : ""
             }`}
           >
