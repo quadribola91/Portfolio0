@@ -42,18 +42,20 @@ const AboutMe = () => {
 
   return (
     <>
-      <div id="AboutMe">
-        <h1 className="ml-8 text-black-500 font-bold h-8">About me</h1>
+      <div id="AboutMe" className="bg-green-300">
+        <h1 className="ml-8 mt-4 text-white font-bold font-mono h-8 text-center text-5xl">
+          DATA
+        </h1>
         <div className="about-me-container  flex flex-col md:flex-row items-center md:divide-x md:divide-gray-300 p-8 justify-content: space-between">
           {/* Personal Information Section */}
-          <div className="personal-info-section md:mr-8 w-full md:w-1/2 lg:max-w-md p-6 border rounded-lg bg-black shadow-md">
-            <h2 className="text-2xl font-bold mb-2 text-red-600">
-              Personal Information
+          <div className="personal-info-section md:mr-8 w-full md:w-1/2 lg:max-w-md  p-6 border rounded-lg bg-green-300 shadow-md">
+            <h2 className="text-2xl font-bold mb-2 text-center text-white">
+              Personal
             </h2>
             {/* Updated wrapper for the sections with thick border and box shadow */}
             <div className="border-4 border-gray-500 rounded-lg p-4 shadow-md mb-4 end">
               <div id="sparko">
-                <p className="text-lg text-white mb-4 font-mono">
+                <p className="text-lg text-gray-700 mb-4 font-mono hover:font-sans">
                   Hi, I'm Omobolarinwa Quadri, a passionate front-end developer
                   dedicated to creating engaging and user-friendly web
                   experiences.
@@ -70,29 +72,29 @@ const AboutMe = () => {
                 <p className="text-lg text-gray-600">
                   <span className="font-bold text-white">Age:</span> {age}
                 </p>
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Freelance:</span>{" "}
                   Available
                 </p>
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Remote:</span>{" "}
                   Available
                 </p>
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Hybrid:</span>{" "}
                   Available
                 </p>
               </div>
               <div className="border-4 border-gray-500 rounded-lg p-2 shadow-md mb-4">
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Phone:</span>{" "}
                   +2349058824643
                 </p>
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Nationality:</span>{" "}
                   Nigerian
                 </p>
-                <p className="text-lg text-green-600">
+                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Languages:</span>{" "}
                   English
                 </p>
