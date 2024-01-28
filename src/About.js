@@ -34,7 +34,7 @@ const About = () => {
 
   const educationContent = (
     <div className="bg-white p-4">
-      <p className="font-bold">BSC.Ed Computer Science</p>
+      <p className="font-bold">BSC.Ed Computer Science (2019)</p>
     </div>
   );
 
@@ -53,8 +53,8 @@ const About = () => {
   );
 
   return (
-    <div className=" mx-auto mt-8 sm-mt-8">
-      <h1 className="mb-6 ml-8 font-bold text-xl text-blue-600 justify-center">
+    <div className=" mx-auto  bg-red-300">
+      <h1 className="mb-6 ml-8 font-bold text-2xl text-white justify-center text-center">
         Experience & Education Background
       </h1>
 
