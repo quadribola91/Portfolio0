@@ -1,10 +1,10 @@
 // LifeProjects.js
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import projectImage1 from "./pictures/TodoApp.png"; // Import your default project image
-import projectImage1Hover from "./pictures/TodoApp2.png"; // Import the hover image for Project 1
-import projectImage2 from "./pictures/receipe1.jpg"; // Import other default project images
-import projectImage2Hover from "./pictures/receipe2.jpg"; // Import the hover image for Project 2
+import { Link } from "react-router-dom";
+import projectImage1 from "./pictures/TodoApp.png";
+import projectImage1Hover from "./pictures/TodoApp2.png";
+import projectImage2 from "./pictures/receipe1.jpg";
+import projectImage2Hover from "./pictures/receipe2.jpg";
 
 const LifeProjects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -15,7 +15,7 @@ const LifeProjects = () => {
       title: "Todo App",
       defaultImage: projectImage1,
       hoverImage: projectImage1Hover,
-      link: "/todo-project-f7aa.vercel.app/",
+      link: "https://todo-project-f7aa.vercel.app/", // Provide the full URL
     },
     {
       id: 2,
@@ -32,9 +32,10 @@ const LifeProjects = () => {
       {projects.map((project) => (
         <Link
           key={project.id}
-          to={project.link} // Use the 'to' prop instead of 'href'
+          to={project.link}
           onMouseOver={() => setHoveredProject(project.id)}
           onMouseOut={() => setHoveredProject(null)}
+          className="hover:no-underline"
         >
           <div className="bg-white p-6 rounded-lg shadow-md">
             <img
