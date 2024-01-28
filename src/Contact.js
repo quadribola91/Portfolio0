@@ -135,7 +135,7 @@ export default function Contact() {
                 <div class="mt-4">
                   <button
                     type="submit"
-                    class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                    class="inline-block w-full rounded-lg bg-green-900 hover:bg-green-400 px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Enquiry
                   </button>
