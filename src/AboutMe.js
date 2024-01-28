@@ -87,10 +87,6 @@ const AboutMe = () => {
               </div>
               <div className="border-4 border-gray-500 rounded-lg p-2 shadow-md mb-4">
                 <p className="text-sm text-green-600">
-                  <span className="font-bold text-white">Phone:</span>{" "}
-                  +2349058824643
-                </p>
-                <p className="text-sm text-green-600">
                   <span className="font-bold text-white">Nationality:</span>{" "}
                   Nigerian
                 </p>
