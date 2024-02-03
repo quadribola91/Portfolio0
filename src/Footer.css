@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #64ebac;
+  background-color: #000000;
   color: rgb(255, 255, 255);
   padding: 20px;
   width: 100%;
@@ -64,7 +64,7 @@
 
 .IconName {
   position: absolute;
-  font-size: 18px;
+  font-size: 12px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -75,7 +75,7 @@
 
 .HoverableIcon:hover .IconName {
   opacity: 1;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 /* src/components/Footer/Footer.css */
