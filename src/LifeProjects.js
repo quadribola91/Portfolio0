@@ -24,6 +24,27 @@ const LifeProjects = () => {
       hoverImage: projectImage2Hover,
       link: "/project2",
     },
+    {
+      id: 2,
+      title: "Abis",
+      defaultImage: projectImage2,
+      hoverImage: projectImage2Hover,
+      link: "/project2",
+    },
+    {
+      id: 2,
+      title: "Weather App",
+      defaultImage: projectImage2,
+      hoverImage: projectImage2Hover,
+      link: "/project2",
+    },
+    {
+      id: 2,
+      title: "Temperature Converter",
+      defaultImage: projectImage2,
+      hoverImage: projectImage2Hover,
+      link: "/project2",
+    },
     // Add more projects as needed
   ];
 
