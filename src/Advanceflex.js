@@ -1,4 +1,5 @@
 import React from "react";
+import "./Advanceflex.css";
 import H1 from "./pictures/Html1.png";
 import H2 from "./pictures/Html2.png";
 import C1 from "./pictures/Css1.png";
@@ -10,99 +11,46 @@ import T2 from "./pictures/Tailwind2.png";
 import R1 from "./pictures/React1.jpeg";
 import R2 from "./pictures/React2.png";
 
-export default function Advanceflex() {
+const skillsData = [
+  { name: "HTML", image1: H1, image2: H2 },
+  { name: "CSS", image1: C1, image2: C2 },
+  { name: "JavaScript", image1: J1, image2: J2 },
+  { name: "Tailwind CSS", image1: T1, image2: T2 },
+  { name: "React", image1: R1, image2: R2 },
+];
+
+export default function SkillsCard() {
   return (
-    <>
+    <div className="flex justify-center items-center min-h-screen bg-white">
       <div
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-100 p-6"
-        id="careers"
+        className="sm:flex sm:flex-wrap lg:flex lg:flex-wrap justify-center gap-6 bg-white p-6"
+        id="skills"
       >
-        <div className="bg-300">
-          <a href="#" className="group block overflow-hidden">
-            <div className="relative h-[350px] sm:h-[450px]">
-              <img
-                src={H1}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl justify-center"
-              />
+        {skillsData.map((skill, index) => (
+          <div key={index} className="bg-300 mt-4 hexagon mb-6 lg:mr-6">
+            <a href="#" className="group block overflow-hidden">
+              <div className="relative h-[500px] sm:h-[450px]">
+                {/* Adjust the height value for the desired card height */}
+                <img
+                  src={skill.image1}
+                  alt=""
+                  className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl justify-center"
+                />
 
-              <img
-                src={H2}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl justify-center"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="bg-300">
-          <a href="#" className="group block overflow-hidden">
-            <div className="relative h-[350px] sm:h-[450px]">
-              <img
-                src={C1}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl"
-              />
-
-              <img
-                src={C2}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="bg-300">
-          <a href="#" className="group block overflow-hidden">
-            <div className="relative h-[350px] sm:h-[450px]">
-              <img
-                src={J1}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl"
-              />
-
-              <img
-                src={J2}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="bg-300">
-          <a href="#" className="group block overflow-hidden">
-            <div className="relative h-[350px] sm:h-[450px]">
-              <img
-                src={T1}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl"
-              />
-
-              <img
-                src={T2}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="bg-300">
-          <a href="#" className="group block overflow-hidden">
-            <div className="relative h-[350px] sm:h-[450px]">
-              <img
-                src={R1}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-100 group-hover:opacity-0 rounded-2xl object-fit"
-              />
-
-              <img
-                src={R2}
-                alt=""
-                className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl object-fit"
-              />
-            </div>
-          </a>
-        </div>
+                <img
+                  src={skill.image2}
+                  alt=""
+                  className="absolute inset-0 h-100% w-100% object-cover opacity-0 group-hover:opacity-100 rounded-2xl justify-center"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-semibold">{skill.name}</h3>
+                {/* Add additional information about the skill if needed */}
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
