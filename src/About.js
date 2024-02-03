@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const About = () => {
+const About = ({ theme }) => {
   const initialExperiences = [
     {
       title: "Alart Academy Maryland LA Nigeria 2023",
@@ -33,8 +33,10 @@ const About = () => {
   };
 
   const educationContent = (
-    <div className="bg-white p-4">
-      <p className="font-bold">BSC.Ed Computer Science (2019)</p>
+    <div className={`bg-${theme === "light" ? "white" : "black"} p-4`}>
+      <p className={`font-bold text-${theme === "light" ? "black" : "white"}`}>
+        BSC.Ed Computer Science (2019)
+      </p>
     </div>
   );
 
@@ -53,7 +55,7 @@ const About = () => {
   );
 
   return (
-    <div className=" mx-auto  bg-red-300">
+    <div className={`mx-auto bg-${theme === "light" ? "red-300" : "gray-800"}`}>
       <h1 className="mb-6 ml-8 font-bold text-2xl text-white justify-center text-center">
         Experience & Education Background
       </h1>
@@ -61,15 +63,21 @@ const About = () => {
       {experiences.map((experience, index) => (
         <div key={index} className="relative">
           <button
-            className="w-full bg-gray-500 p-1 text-left mb-2 flex items-center justify-between"
+            className={`w-full bg-gray-500 p-1 text-left mb-2 flex items-center justify-between text-${
+              theme === "light" ? "white" : "black"
+            }`}
             onClick={() => toggleExperience(index)}
           >
             {icon}
-            <span className="font-bold text-white text-lg">
+            <span
+              className={`font-bold ${
+                theme === "light" ? "text-white" : "text-black"
+              } text-lg`}
+            >
               {experience.title}
             </span>
             <span
-              className={`ml-2  ${
+              className={`ml-2 ${
                 experience.isOpen ? "transform rotate-180" : ""
               }`}
             >
@@ -77,8 +85,14 @@ const About = () => {
             </span>
           </button>
           {experience.isOpen && (
-            <div className="bg-white p-4">
-              <p className="font-bold">{experience.content}</p>
+            <div className={`bg-${theme === "light" ? "white" : "black"} p-4`}>
+              <p
+                className={`font-bold text-${
+                  theme === "light" ? "black" : "white"
+                }`}
+              >
+                {experience.content}
+              </p>
             </div>
           )}
         </div>
@@ -87,11 +101,17 @@ const About = () => {
       {/* Education Section */}
       <div className="relative">
         <button
-          className="w-full bg-gray-500 p-1 text-left mb-2 flex items-center justify-between"
+          className={`w-full bg-gray-500 p-1 text-left mb-2 flex items-center justify-between text-${
+            theme === "light" ? "white" : "black"
+          }`}
           onClick={() => setEducationOpen(!isEducationOpen)}
         >
           {icon}
-          <span className="font-bold text-white text-lg">
+          <span
+            className={`font-bold ${
+              theme === "light" ? "text-white" : "text-black"
+            } text-lg`}
+          >
             Tai Solarin University of Education
           </span>
           <span
