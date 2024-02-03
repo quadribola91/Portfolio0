@@ -33,11 +33,8 @@ function Navbar2() {
   }, []);
 
   return (
-    <header
-      className={`bg-green-300 shadow-lg ${isNavOpen ? "md:hidden" : ""}`}
-      id="navbar"
-    >
-      <div className="container mx-auto top-0 flex items-center  justify-between p-1">
+    <header className={`bg-white ${isNavOpen ? "md:hidden" : ""}`} id="navbar">
+      <div className="bg-white container fixed top-0 z-50 overflow-hidden mt-0 mb-8 mx-auto top-0 flex items-center  justify-between p-1">
         {/* Container for logo */}
         <div className="flex items-center">
           <img src={logo1} className="rounded-full h-12" alt="Logo" />
@@ -49,10 +46,10 @@ function Navbar2() {
             isNavOpen ? "block" : "hidden"
           }`}
         >
-          <div className="nav-center bg-green-600 p-4 rounded-full shadow-lg">
+          <div className="nav-center bg-white p-4 rounded-full shadow-lg">
             <Link
               to="/home"
-              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
+              className={`text-black hover:text-gray-700 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/Home" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -60,7 +57,7 @@ function Navbar2() {
             </Link>
             <Link
               to="/AboutMe"
-              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
+              className={`text-black hover:text-gray-700 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/AboutMe" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -68,7 +65,7 @@ function Navbar2() {
             </Link>
             <Link
               to="/contact"
-              className={`text-white hover:text-green-800 font-mono hover:font-sans font-bold m-2 ${
+              className={`text-black hover:text-gray-700 font-mono hover:font-sans font-bold m-2 ${
                 location.pathname === "/contact" ? "hover:text-green-500" : ""
               } transition`}
             >
@@ -83,11 +80,11 @@ function Navbar2() {
             isNavOpen ? "hidden" : "block"
           }`}
         >
-          <div className="nav-center bg-red-200 p-2 rounded-full shadow-lg">
+          <div className="nav-center bg-red p-2 rounded-full shadow-lg">
             <Link
               to="/projects"
-              className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 font-bold m-2 ${
-                location.pathname === "/projects" ? "hover:text-green-500" : ""
+              className={`text-black hover:text-red-800 text-xl font-mono hover:font-sans font-bold m-2 font-bold m-2 ${
+                location.pathname === "/projects" ? "hover:text-red-500" : ""
               } transition`}
             >
               Projects
@@ -133,10 +130,10 @@ function Navbar2() {
 
       {/* Adjusted styles for more space, increased width, and reduced padding */}
       <div className={`md:hidden ${isNavOpen ? "block" : "hidden"} px-6`}>
-        <div className="flex flex-col items-center space-y-4 mt-4 p-4">
+        <div className="flex flex-col items-center space-y-4 mt-8 p-4">
           <Link
             to="/Home"
-            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
+            className={`text-black hover:text-gray-700 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/Home" ? "active" : ""
             }`}
           >
@@ -144,7 +141,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/AboutMe"
-            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
+            className={`text-black hover:text-gray-700 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/AboutMe" ? "active" : ""
             }`}
           >
@@ -152,7 +149,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/contact"
-            className={`text-white hover:text-green-800 text-xl font-mono hover:font-sans font-bold m-2 transition ${
+            className={`text-black hover:text-gray-700 text-xl font-mono hover:font-sans font-bold m-2 transition ${
               location.pathname === "/contact" ? "active" : ""
             }`}
           >
@@ -160,7 +157,7 @@ function Navbar2() {
           </Link>
           <Link
             to="/projects"
-            className={`bg-red-400 text-xl hover:text-green-800 text-white rounded-full px-2 py-2 font-medium ${
+            className={`bg-blue-800 hover:bg-blue-200 text-xl hover:text-green-800 text-white rounded-full px-2 py-2 font-medium ${
               location.pathname === "/projects" ? "active" : ""
             }`}
           >
