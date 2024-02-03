@@ -1,4 +1,5 @@
 import React from "react";
+import "./Advanceflex.css";
 import H1 from "./pictures/Html1.png";
 import H2 from "./pictures/Html2.png";
 import C1 from "./pictures/Css1.png";
