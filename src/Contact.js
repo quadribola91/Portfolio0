@@ -12,7 +12,10 @@ import ProjectsPage from "./ProjectsPage";
 export default function Contact() {
   return (
     <>
-      <section className="bg-white-400" id="contact">
+      <section className="bg-white-400 mt-4" id="contact">
+        <h2 className="text-black font-bold text-3xl  mt-20 hover:text-gray-800 hover:font-sans">
+          Get In Touch
+        </h2>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
@@ -66,8 +69,8 @@ export default function Contact() {
                 </a>
               </div>
 
-              <div className="mt-8 ml-20">
-                <a href="" className="text-2xl font-bold text-green-600">
+              <div className="mt-8 ml-20 justify-center">
+                <a href="" className="text-2xl font-bold text-gray-600">
                   {" "}
                   +23490-588-24643{" "}
                 </a>
@@ -135,7 +138,7 @@ export default function Contact() {
                 <div class="mt-4">
                   <button
                     type="submit"
-                    class="inline-block w-full rounded-lg bg-green-900 hover:bg-green-400 px-5 py-3 font-medium text-white sm:w-auto"
+                    class="inline-block w-full rounded-lg bg-blue-900 hover:bg-blue-400 px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Enquiry
                   </button>
