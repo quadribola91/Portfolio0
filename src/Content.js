@@ -68,7 +68,7 @@ export default function Content({ blog }) {
         } p-6 md:p-8 rounded-lg mb-6`}
         id="Home"
       >
-        <div className="relative block overflow-hidden rounded-lg border border-gray-100 p-4 lg:p-6 transition-transform hover:transform-hover">
+        <div className="relative block overflow-hidden rounded-lg border border-gray-100 mt-8 p-4 lg:p-6 transition-transform hover:transform-hover">
           {/* Toggle Button */}
 
           <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
