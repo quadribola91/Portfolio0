@@ -142,7 +142,7 @@ export default function Content({ blog }) {
           </div>
           <div
             ref={projectRef}
-            className={`mt-15 text-3xl md:text-5xl text-${
+            className={`mt-15 mb-8 font-bold text-lg md:text-5xl text-${
               theme === "light" ? "blue-500" : "blue-300"
             } font-mono`}
           >
