@@ -3,7 +3,6 @@ import pic from "./ProfilePic.jpg";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import ProjectsPage from "./ProjectsPage";
-import Stories from "./Stories";
 
 export default function Content({ blog }) {
   const blogNameRef = useRef(null);
@@ -152,7 +151,6 @@ export default function Content({ blog }) {
 
       {/* ... rest of your code ... */}
       <AboutMe />
-      <Stories />
       <ProjectsPage />
       <Contact />
     </>
