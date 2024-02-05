@@ -43,7 +43,9 @@ const AboutMe = () => {
     <>
       <div
         id="AboutMe"
-        className={`bg-${theme === "light" ? "white" : "black"} text-${
+        className={`bg-${
+          theme === "light" ? "white" : "black"
+        } hover:animate-background rounded-xl bg-gradient-to-r from-white-100 via-gray-400 to-white p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] text-${
           theme === "light" ? "black" : "white"
         }`}
       >
