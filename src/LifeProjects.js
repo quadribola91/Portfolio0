@@ -39,10 +39,10 @@ const LifeProjects = () => {
     },
     {
       id: 4,
-      title: "Weather App",
+      title: "HighCloud Weather",
       defaultImage: projectImage4,
       hoverImage: projectImage4Hover,
-      link: "/project2",
+      link: "https://high-weather.vercel.app/",
     },
     {
       id: 5,
