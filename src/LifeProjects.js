@@ -24,11 +24,11 @@ const LifeProjects = () => {
       link: "https://todo-project-f7aa.vercel.app/", // Provide the full URL
     },
     {
-      id: 2,
-      title: "Receipe",
-      defaultImage: projectImage2,
-      hoverImage: projectImage2Hover,
-      link: "/project2",
+     id: 2,
+      title: "HighCloud Weather",
+      defaultImage: projectImage4,
+      hoverImage: projectImage4Hover,
+      link: "https://high-weather.vercel.app/",
     },
     {
       id: 3,
@@ -38,11 +38,11 @@ const LifeProjects = () => {
       link: "/project2",
     },
     {
-      id: 4,
-      title: "HighCloud Weather",
-      defaultImage: projectImage4,
-      hoverImage: projectImage4Hover,
-      link: "https://high-weather.vercel.app/",
+        id: 4,
+      title: "Receipe",
+      defaultImage: projectImage2,
+      hoverImage: projectImage2Hover,
+      link: "/project4",
     },
     {
       id: 5,
