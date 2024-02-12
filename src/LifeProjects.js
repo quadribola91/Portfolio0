@@ -28,7 +28,7 @@ const LifeProjects = () => {
       title: "HighCloud Weather",
       defaultImage: projectImage4,
       hoverImage: projectImage4Hover,
-      link: "https://high-weather.vercel.app/",
+      link: "https://weather-p-xi.vercel.app/",
     },
     {
       id: 3,
