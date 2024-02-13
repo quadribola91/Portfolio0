@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo1 from "./ProfilePic.jpg";
 
-const Navbar = () => {
+const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -142,4 +142,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
