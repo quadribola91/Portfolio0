@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo1 from "./ProfilePic.jpg";
+import "./Navbar2.css"; // Import the CSS file for styling
 
 const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className="bg-white top-0 left-0 w-full z-50 fixed w-1/2 lg:w-full">
+    <div className="bg-white top-0 left-0 z-50 fixed w-1/2 lg:w-full">
       <div
         className={`max-w-7xl mx-auto px-4 ${
           isOpen ? "block" : "hidden"
@@ -26,6 +27,11 @@ const Navbar2 = () => {
                   className="w-12 h-12 rounded-full"
                 />
               </Link>
+            </div>
+            <div>
+              <h1 className="text-md md:text-2xl font-bold text-black mt-2 ml-4">
+                Omobolarinwa.dev
+              </h1>
             </div>
           </div>
           <div className="hidden lg:block mt-4">
