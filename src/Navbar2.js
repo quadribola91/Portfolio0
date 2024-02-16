@@ -10,7 +10,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className="bg-white top-0 left-0 z-50 fixed w-1/2 lg:w-full">
+    <div className="bg-white top-0 left-0 z-50 fixed  lg:w-full">
       <div
         className={`max-w-7xl mx-auto px-4 ${
           isOpen ? "block" : "hidden"
@@ -28,7 +28,7 @@ const Navbar2 = () => {
               </Link>
             </div>
             <div>
-              <h1 className="text-md md:text-2xl font-bold text-black mt-2 ml-4">
+              <h1 className="hidden:text-sm md:text-2xl font-bold text-black mt-2 ml-4">
                 Omobolarinwa.dev
               </h1>
             </div>
