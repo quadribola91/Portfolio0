@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import "./Home.css";
-import Articles from "./Articles";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,7 +38,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <Articles />
     </div>
   );
 };
