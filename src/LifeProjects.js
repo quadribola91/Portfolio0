@@ -28,21 +28,22 @@ const LifeProjects = () => {
       title: "HighCloud Weather",
       defaultImage: projectImage4,
       hoverImage: projectImage4Hover,
-      link: "https://weather-p-xi.vercel.app/",
+      link: "https://highweather.vercel.app/",
     },
+   
     {
-      id: 3,
+        id: 3,
+      title: "HighFoods",
+      defaultImage: projectImage2,
+      hoverImage: projectImage2Hover,
+      link: "https://highfoods.vercel.app/",
+    },
+     {
+      id: 4,
       title: "Abis",
       defaultImage: projectImage3,
       hoverImage: projectImage3Hover,
       link: "/project2",
-    },
-    {
-        id: 4,
-      title: "Receipe",
-      defaultImage: projectImage2,
-      hoverImage: projectImage2Hover,
-      link: "/project4",
     },
     {
       id: 5,
